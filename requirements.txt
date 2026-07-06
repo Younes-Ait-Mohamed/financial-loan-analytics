@@ -1,0 +1,77 @@
+# ==========================
+# Core Data Science
+# ==========================
+numpy
+pandas
+scipy
+
+# ==========================
+# Data Visualization
+# ==========================
+matplotlib
+plotly
+
+# ==========================
+# Machine Learning
+# ==========================
+scikit-learn
+xgboost
+lightgbm
+imbalanced-learn
+
+# ==========================
+# Explainable AI
+# ==========================
+shap
+
+# ==========================
+# Statistical Analysis
+# ==========================
+statsmodels
+
+# ==========================
+# Dashboard
+# ==========================
+streamlit
+dash
+dash-bootstrap-components
+dash-ag-grid
+
+# ==========================
+# Excel & File Handling
+# ==========================
+openpyxl
+xlrd
+
+# ==========================
+# Jupyter
+# ==========================
+jupyter
+ipykernel
+
+# ==========================
+# Model Saving
+# ==========================
+joblib
+
+# ==========================
+# Progress Bars
+# ==========================
+tqdm
+
+# ==========================
+# Environment Variables
+# ==========================
+python-dotenv
+
+# ==========================
+# Code Formatting & Linting
+# ==========================
+black
+flake8
+isort
+
+# ==========================
+# Testing
+# ==========================
+pytest
