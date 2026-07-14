@@ -1,0 +1,13 @@
+model,actual,predicted,count
+dummy_most_frequent,0,0,96088
+dummy_most_frequent,0,1,0
+dummy_most_frequent,1,0,16614
+dummy_most_frequent,1,1,0
+logistic_regression_balanced,0,0,70272
+logistic_regression_balanced,0,1,25816
+logistic_regression_balanced,1,0,4615
+logistic_regression_balanced,1,1,11999
+hist_gradient_boosting,0,0,93805
+hist_gradient_boosting,0,1,2283
+hist_gradient_boosting,1,0,11199
+hist_gradient_boosting,1,1,5415

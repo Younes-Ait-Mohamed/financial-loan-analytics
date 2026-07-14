@@ -1,0 +1,30 @@
+column,role,source,dtype,missing_values,missing_percentage,unique_values,included_as_model_input,modeling_note
+loan_id,identifier,original,object,0,0.0,563510,False,Keep for traceability; do not use as model input.
+has_default_within_12_months,target,original,int64,0,0.0,2,False,Prediction target.
+country,feature,original_baseline_candidate,object,0,0.0,8,True,Candidate model input; confirm availability at prediction time.
+issued_amount,feature,original_baseline_candidate,float64,0,0.0,7658,True,Candidate model input; confirm availability at prediction time.
+initial_interest_rate,feature,original_baseline_candidate,float64,0,0.0,6258,True,Candidate model input; confirm availability at prediction time.
+nr_of_payments,feature,original_baseline_candidate,int64,0,0.0,142,True,Candidate model input; confirm availability at prediction time.
+initial_loan_duration,feature,original_baseline_candidate,int64,0,0.0,77,True,Candidate model input; confirm availability at prediction time.
+combined_income,feature,original_baseline_candidate,float64,273154,0.48473673936576106,148718,True,Candidate model input; confirm availability at prediction time.
+issue_year,feature,engineered,int32,0,0.0,17,True,Created in feature engineering notebook.
+issue_month,feature,engineered,int32,0,0.0,12,True,Created in feature engineering notebook.
+issue_quarter,feature,engineered,int32,0,0.0,4,True,Created in feature engineering notebook.
+issue_day_of_week,feature,engineered,int32,0,0.0,7,True,Created in feature engineering notebook.
+issue_month_sin,feature,engineered,float64,0,0.0,11,True,Created in feature engineering notebook.
+issue_month_cos,feature,engineered,float64,0,0.0,11,True,Created in feature engineering notebook.
+loan_issued_at_missing,feature,engineered,int64,0,0.0,1,True,Missingness indicator; useful when missing values carry business meaning.
+log_issued_amount,feature,engineered,float64,0,0.0,7658,True,Created in feature engineering notebook.
+combined_income_missing,feature,engineered,int64,0,0.0,2,True,Missingness indicator; useful when missing values carry business meaning.
+log_combined_income,feature,engineered,float64,273154,0.48473673936576106,148718,True,Created in feature engineering notebook.
+loan_to_income_ratio,feature,engineered,float64,273426,0.4852194282266508,240958,True,Created in feature engineering notebook.
+installment_amount_proxy,feature,engineered,float64,0,0.0,33317,True,Created in feature engineering notebook.
+installment_to_income_proxy,feature,engineered,float64,273426,0.4852194282266508,254746,True,Created in feature engineering notebook.
+interest_cost_proxy,feature,engineered,float64,0,0.0,63525,True,Created in feature engineering notebook.
+amount_per_duration_unit,feature,engineered,float64,0,0.0,13866,True,Created in feature engineering notebook.
+issued_amount_missing,feature,engineered,int64,0,0.0,1,True,Missingness indicator; useful when missing values carry business meaning.
+initial_interest_rate_missing,feature,engineered,int64,0,0.0,1,True,Missingness indicator; useful when missing values carry business meaning.
+nr_of_payments_missing,feature,engineered,int64,0,0.0,1,True,Missingness indicator; useful when missing values carry business meaning.
+initial_loan_duration_missing,feature,engineered,int64,0,0.0,1,True,Missingness indicator; useful when missing values carry business meaning.
+loan_to_income_ratio_missing,feature,engineered,int64,0,0.0,2,True,Missingness indicator; useful when missing values carry business meaning.
+installment_to_income_proxy_missing,feature,engineered,int64,0,0.0,2,True,Missingness indicator; useful when missing values carry business meaning.
