@@ -1,0 +1,129 @@
+{
+  "artifact_path": "C:\\Users\\aitmo\\financial-loan-analytics\\models\\optimized\\best_optimized_default_model.joblib",
+  "artifact_size_mb": 0.0092926025390625,
+  "calibration_method": "isotonic",
+  "catboost_status": "Not installed; not required for two low-cardinality fields.",
+  "class_imbalance_policy": "Class weights / scale_pos_weight tuned; no synthetic samples cross time.",
+  "conservative_exclusions": [
+    "projected_npv_return"
+  ],
+  "data_path": "C:\\Users\\aitmo\\financial-loan-analytics\\data\\processed\\data_cleaned.csv",
+  "decision_threshold": 0.04,
+  "limitations": [
+    "Issued-loan population only; rejected applications are absent.",
+    "No borrower identifier is available for repeated-customer grouping.",
+    "Country needs governance and fairness review.",
+    "Risk rating is Bondora's existing at-issue score, not an independent input.",
+    "Financial costs were unavailable; threshold uses a pre-registered balance."
+  ],
+  "post_origination_exclusions": [
+    "loan_id",
+    "early_repaid_at",
+    "is_early_repaid_within_14_days",
+    "loan_status",
+    "loan_last_recorded_action_date_local",
+    "nr_of_payments",
+    "principal_balance",
+    "principal_debt",
+    "principal_paid_total",
+    "interest_paid_total",
+    "extra_interest_paid_total",
+    "late_fee_paid_total",
+    "maintenance_fee_paid_total",
+    "is_default",
+    "next_payment_nr",
+    "next_payment_date_local",
+    "debt_occured_date_local",
+    "days_past_due_principal",
+    "months_in_default",
+    "months_on_book",
+    "loan_status_risk",
+    "repaid_amount_total",
+    "has_default_within_12_months"
+  ],
+  "rolling_cv_folds": 3,
+  "safe_raw_features": [
+    "country",
+    "loan_issued_at",
+    "issued_amount",
+    "initial_interest_rate",
+    "initial_loan_duration",
+    "combined_income",
+    "customer_risk_rating"
+  ],
+  "screened_models": [
+    "Logistic Regression",
+    "Gradient Boosting",
+    "Linear SVM",
+    "Extra Trees",
+    "XGBoost",
+    "Random Forest",
+    "LightGBM",
+    "Decision Tree"
+  ],
+  "selected_candidate": {
+    "feature_configuration": "stacked_engineered",
+    "model_name": "Logistic Regression",
+    "model_parameters": {
+      "C": 0.1,
+      "class_weight": null,
+      "penalty": "l2"
+    },
+    "scaling": "robust"
+  },
+  "selected_model": "Logistic Regression",
+  "svm_policy": "LinearSVC used; nonlinear kernel SVM is unsuitable at this scale.",
+  "target": "has_default_within_12_months",
+  "temporal_split": [
+    {
+      "default_rate": 0.08557173910961724,
+      "defaults": 8936,
+      "end_date": "2024-09-30T23:56:46.687000",
+      "partition": "training",
+      "rows": 104427,
+      "start_date": "2024-01-01T00:06:00.643000"
+    },
+    {
+      "default_rate": 0.07378350611749322,
+      "defaults": 3160,
+      "end_date": "2024-12-31T23:58:03.503000",
+      "partition": "validation",
+      "rows": 42828,
+      "start_date": "2024-10-01T00:04:35.417000"
+    },
+    {
+      "default_rate": 0.07650826969707937,
+      "defaults": 2114,
+      "end_date": "2024-11-30T23:55:34.890000",
+      "partition": "calibration_oct_nov",
+      "rows": 27631,
+      "start_date": "2024-10-01T00:04:35.417000"
+    },
+    {
+      "default_rate": 0.06882937421859578,
+      "defaults": 1046,
+      "end_date": "2024-12-31T23:58:03.503000",
+      "partition": "threshold_december",
+      "rows": 15197,
+      "start_date": "2024-12-01T00:02:40.603000"
+    },
+    {
+      "default_rate": 0.07488586204936822,
+      "defaults": 3953,
+      "end_date": "2025-04-27T23:28:18.727000",
+      "partition": "untouched_test",
+      "rows": 52787,
+      "start_date": "2025-01-01T00:00:06.407000"
+    }
+  ],
+  "tuning_iterations_per_finalist": 3,
+  "versions": {
+    "joblib": "1.5.3",
+    "lightgbm": "4.6.0",
+    "numpy": "2.4.6",
+    "pandas": "3.0.3",
+    "python": "3.12.13",
+    "scikit_learn": "1.9.0",
+    "xgboost": "3.3.0"
+  }
+}

@@ -1,0 +1,2 @@
+policy,threshold,accuracy,weighted_precision,weighted_f1,roc_auc,default_precision,default_recall,default_f1,test_rows,default_rate
+maximum_f1_validation_policy,0.11,0.8295224202928752,0.8873588356437748,0.8545614438593047,0.7246864655069138,0.18319939728779508,0.3690867695421199,0.24486028362843,52787,0.07488586204936822
